@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.1.3 – Entry Client Directive
+Fix: Add `"use client"` directive to package entry (`src/index.ts`) so frameworks (e.g. Next.js) correctly treat the module as client when importing `Icon` from the root export. Previously only the inner component file had the directive, which could still trigger a server invocation of `useReducedMotion` in some RSC boundary patterns.
+
+Notes:
+- No API changes.
+- Safe upgrade for all consumers; recommended for Next.js users seeing the server hook error.
+
 ## 0.1.2 – Client + Spacing Tweaks
 Changes:
 - Add `"use client"` directive to `src/icon.tsx` (fixes Next.js RSC `useReducedMotion` server error).
