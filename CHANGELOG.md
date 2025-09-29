@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.1.2 – Client + Spacing Tweaks
+Changes:
+- Add `"use client"` directive to `src/icon.tsx` (fixes Next.js RSC `useReducedMotion` server error).
+- Circle spacing adjustments (final values):
+	- Base ring thickness constant remains 7% (decided not to raise after evaluation)
+	- Gap formula now: `ringPct * 0.25 + stroke * 0.45` (previously used smaller stroke factor)
+	- Inner scale factor reduced to 0.75 (smaller glyph for more breathing room)
+
+Notes:
+- No breaking API changes.
+- Visual refinement + RSC safety.
+- Recommend upgrading if using Next.js with RSC warnings.
+
 ## 0.1.1 – Documentation Update
 Patch release containing README expansion only (no runtime / build output changes):
 - Added full `IconProps` reference table (animation timing, draw, accessibility, trigger, theming details)

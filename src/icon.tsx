@@ -1,3 +1,4 @@
+"use client";
 import * as React from 'react';
 import * as LucideIcons from 'lucide-react';
 import * as LucideLabIcons from '@lucide/lab';
@@ -155,7 +156,7 @@ export const Icon: React.FC<IconProps> = ({
   // Stroke clamped for consistency across sizes
   const iconStroke = Math.min(3, Math.max(1, strokeWidth));
   const isCircleVariant = (variant === 'circle' || variant === 'circleFilled');
-  const BASE_RING_PCT = 7;       // base ring thickness (% of diameter)
+  const BASE_RING_PCT = 7;       // base ring thickness (% of diameter) (increased for more prominent donut)
   const BASE_PADDING_PCT = 12;   // inner spacing between ring and icon box
   const BASE_CIRCLE_STROKE_REF = 2;
   let ringPct = circleBorderWidth != null
@@ -166,8 +167,8 @@ export const Icon: React.FC<IconProps> = ({
   ringPct = Math.min(ringPct, maxRingForContent);
   const innerRadius = 50 - ringPct; // Innenkante Ring
 
-  // Gap between ring and icon scales with ring thickness + stroke
-  const gapPct = (ringPct * 0.25) + (iconStroke * 0.35); // weiter reduziert
+  // Gap between ring and icon scales with ring thickness + stroke (more generous for extra spacing)
+  const gapPct = (ringPct * 0.25) + (iconStroke * 0.45);
   const effectiveGapPct = Math.min(innerRadius, gapPct); // nicht größer als innerRadius
 
   function hexToLuma(hex?: string) {
@@ -208,7 +209,7 @@ export const Icon: React.FC<IconProps> = ({
   };
 
   const outerSizeStyle = isCircleVariant ? { width: `${size}px`, height: `${size}px` } : {};
-  const SCALE_FACTOR = 0.9;
+  const SCALE_FACTOR = 0.75; // slightly smaller inner glyph for more breathing room
   let innerSize = !isCircleVariant
     ? size
     : ((innerRadius - effectiveGapPct) / 50) * size * SCALE_FACTOR;
