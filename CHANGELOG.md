@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.1.1 – Documentation Update
+Patch release containing README expansion only (no runtime / build output changes):
+- Added full `IconProps` reference table (animation timing, draw, accessibility, trigger, theming details)
+- Clarified reduced motion behavior & optional peer dependency usage
+- Added troubleshooting & performance notes
+
+No code or dependency changes affecting published bundle; consumers can stay on 0.1.0 unless they want the improved docs in their `npm view` metadata.
+
 ## 0.1.0 – Initial Release
 First public publish of `@elunarlabs/icon-kit` (previously prepared as `@elunar/icon-kit` before organization scope finalization).
 
