@@ -1,8 +1,8 @@
 <div align="center">
 
-# @elunar/icon-kit
+# @elunarlabs/icon-kit
 
-[![npm version](https://img.shields.io/npm/v/@elunar/icon-kit.svg)](https://www.npmjs.com/package/@elunar/icon-kit)
+[![npm version](https://img.shields.io/npm/v/@elunarlabs/icon-kit.svg)](https://www.npmjs.com/package/@elunarlabs/icon-kit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 Lightweight unified React Icon component for **Lucide Core**, optional **Lucide Lab**, and **Font Awesome Brands** – with animated circle variants (pure SVG ring) & Framer Motion effects.
@@ -21,7 +21,7 @@ Lightweight unified React Icon component for **Lucide Core**, optional **Lucide 
 
 ## Install
 ```bash
-npm install @elunar/icon-kit
+npm install @elunarlabs/icon-kit
 ```
 Optional peers (only if you actually use them):
 ```bash
@@ -30,7 +30,7 @@ npm install @lucide/lab @fortawesome/react-fontawesome @fortawesome/free-brands-
 
 ## Quick Start
 ```tsx
-import { Icon } from '@elunar/icon-kit';
+import { Icon } from '@elunarlabs/icon-kit';
 
 export function Demo() {
   return (

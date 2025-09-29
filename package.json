@@ -1,5 +1,5 @@
 {
-  "name": "@elunar/icon-kit",
+  "name": "@elunarlabs/icon-kit",
   "version": "0.1.0",
   "description": "Elunar Icon Kit: Unified Icon component (Lucide core + Lucide Lab + Font Awesome Brands) with circle variants & Framer Motion animations.",
   "type": "module",
@@ -88,12 +88,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elunar/icon-kit.git"
+    "url": "git+https://github.com/elunarlabs/icon-kit.git"
   },
   "bugs": {
-    "url": "https://github.com/elunar/icon-kit/issues"
+    "url": "https://github.com/elunarlabs/icon-kit/issues"
   },
-  "homepage": "https://github.com/elunar/icon-kit#readme",
+  "homepage": "https://github.com/elunarlabs/icon-kit#readme",
   "keywords": [
     "elunar",
     "icons",

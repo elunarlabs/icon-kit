@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 
 ## 0.1.0 – Initial Release
-First public publish of `@elunar/icon-kit`.
+First public publish of `@elunarlabs/icon-kit` (previously prepared as `@elunar/icon-kit` before organization scope finalization).
 
 ### Highlights
 - Unified React Icon component for:
