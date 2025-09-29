@@ -1,6 +1,6 @@
 {
   "name": "@elunarlabs/icon-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Elunar Icon Kit: Unified Icon component (Lucide core + Lucide Lab + Font Awesome Brands) with circle variants & Framer Motion animations.",
   "type": "module",
   "main": "dist/index.cjs",
