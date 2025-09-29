@@ -1,0 +1,115 @@
+{
+  "name": "@elunar/icon-kit",
+  "version": "0.1.0",
+  "description": "Elunar Icon Kit: Unified Icon component (Lucide core + Lucide Lab + Font Awesome Brands) with circle variants & Framer Motion animations.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./icon.css": {
+      "default": "./dist/index.css"
+    }
+  },
+  "sideEffects": [
+    "./dist/index.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "check": "npm run lint && npm run typecheck && npm test",
+    "prepublishOnly": "npm run clean && npm run check && npm run build && npm pack --dry-run",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "format": "prettier --write .",
+    "storybook": "storybook dev -p 6006",
+    "build:storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "@fortawesome/free-brands-svg-icons": ">=6.6.0",
+    "@fortawesome/react-fontawesome": ">=0.2.2",
+    "@lucide/lab": ">=0.1.2",
+    "framer-motion": ">=11",
+    "lucide-react": ">=0.544.0",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "@lucide/lab": {
+      "optional": true
+    },
+    "@fortawesome/react-fontawesome": {
+      "optional": true
+    },
+    "@fortawesome/free-brands-svg-icons": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.9.0",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "jsdom": "^24.0.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^5.0.5",
+    "tsup": "^8.0.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.0.1",
+    "vitest": "^1.5.3",
+    "@storybook/react-vite": "9.1.8",
+    "@storybook/addon-a11y": "9.1.8",
+    "storybook": "9.1.8",
+    "eslint-plugin-storybook": "9.1.8",
+    "@storybook/addon-docs": "9.1.8"
+  },
+  "overrides": {},
+  "storybook": {
+    "previewHead": "<style>body{font-family:system-ui,sans-serif;}</style>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elunar/icon-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elunar/icon-kit/issues"
+  },
+  "homepage": "https://github.com/elunar/icon-kit#readme",
+  "keywords": [
+    "elunar",
+    "icons",
+    "lucide",
+    "fontawesome",
+    "framer-motion",
+    "react",
+    "ui",
+    "icon-component"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

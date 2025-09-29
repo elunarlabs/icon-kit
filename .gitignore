@@ -1,0 +1,83 @@
+# --- Node & Dependency Artifacts ---
+node_modules/
+.pnpm-store/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage
+coverage/
+*.lcov
+
+# Build outputs
+/dist/
+/storybook-static/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# IDE / Editor
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Temp / Cache
+.tmp/
+.temp/
+.cache/
+storybook-cache/
+.eslintcache
+.prettier-cache
+
+# Test related
+/.nyc_output/
+/jest-test-results.json
+
+# Local env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Package archives
+*.tgz
+
+# Lockfiles (keep exactly one if you choose to commit later) 
+# Here we assume you DO NOT commit lockfile for library packages
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Optional: macOS metadata
+.AppleDouble
+.LSOverride
+
+# Coverage artifacts from Vitest (if configured)
+.vitest/
+
+# Storybook generated cache (newer versions)
+.sb-cache/
+
+# VSCode test / debug outputs
+.vscode-test
+
+# Misc
+*.swp
+*.swo

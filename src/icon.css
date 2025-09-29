@@ -1,0 +1,28 @@
+.elunar-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  user-select: none;
+  line-height: 1;
+}
+
+.elunar-icon--circle,
+.elunar-icon--circleFilled {
+  border-radius: 9999px;
+  box-sizing: border-box;
+}
+
+.elunar-icon__svg { display: block; line-height: 1; }
+
+/* Optional subtle default filled background when circleFilled without explicit color */
+.elunar-icon--circleFilled:not([style*="background"]) {
+  background: rgba(0,0,0,0.10);
+}
+@media (prefers-color-scheme: dark) {
+  .elunar-icon--circleFilled:not([style*="background"]) {
+    background: rgba(255,255,255,0.10);
+  }
+}
+

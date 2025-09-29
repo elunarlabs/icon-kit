@@ -1,0 +1,13 @@
+:root { --sb-bg: #ffffff; --sb-fg: #111; }
+[data-theme="dark"] { --sb-bg: #0f1115; --sb-fg: #f5f5f5; }
+body { background: var(--sb-bg); color: var(--sb-fg); transition: background .3s, color .3s; }
+.sb-icon-grid { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+.sb-row { display: flex; gap: 24px; align-items: center; }
+.sb-col { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.sb-center { display:flex; align-items:center; justify-content:center; }
+.sb-playground-panel { display:flex; flex-direction:column; gap:16px; max-width:900px; }
+.sb-divider { height:1px; background: rgba(0,0,0,0.1); margin:8px 0; }
+[data-theme="dark"] .sb-divider { background: rgba(255,255,255,0.15); }
+.sb-grid-box { padding:12px; border:1px solid rgba(0,0,0,0.08); border-radius:8px; min-width:120px; display:flex; flex-direction:column; gap:8px; }
+[data-theme="dark"] .sb-grid-box { border-color: rgba(255,255,255,0.15); }
+.sb-inline { display:inline-flex; gap:12px; align-items:center; }
