@@ -60,8 +60,8 @@ storybook-cache/
 *.tgz
 
 # Lockfiles:
-# We now commit package-lock.json for reproducible CI builds.
-package-lock.json
+# Commit package-lock.json for reproducible CI builds (uncomment ignore if you decide to drop it again)
+# (DO NOT ignore it now)
 # Still ignore alternative lockfiles to avoid accidental adds
 yarn.lock
 pnpm-lock.yaml
